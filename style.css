@@ -1,0 +1,285 @@
+/* Subversive Tools - Main Stylesheet */
+
+:root {
+  --pink: #FF69B4;
+  --dark: #1a1a1a;
+  --gray: #4a4a4a;
+  --light-gray: #f5f5f5;
+  --white: #ffffff;
+  --border: #e0e0e0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  line-height: 1.6;
+  color: var(--dark);
+  background: var(--white);
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Typography */
+h1 {
+  font-size: 3em;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+  color: var(--dark);
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 600;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  color: var(--dark);
+  border-bottom: 2px solid var(--pink);
+  padding-bottom: 0.3em;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  color: var(--dark);
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+strong {
+  color: var(--dark);
+  font-weight: 600;
+}
+
+/* Links */
+a {
+  color: var(--pink);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.2s;
+}
+
+a:hover {
+  border-bottom: 1px solid var(--pink);
+}
+
+/* Code */
+code {
+  font-family: 'Monaco', 'Courier New', monospace;
+  background: var(--light-gray);
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+pre {
+  background: var(--light-gray);
+  padding: 1em;
+  border-radius: 4px;
+  overflow-x: auto;
+  margin: 1em 0;
+}
+
+pre code {
+  background: none;
+  padding: 0;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 3em 0;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 3em;
+}
+
+.hero h1 {
+  margin-bottom: 0.2em;
+}
+
+.hero .tagline {
+  font-size: 1.5em;
+  color: var(--gray);
+  margin-bottom: 1em;
+}
+
+.hero .subtitle {
+  color: var(--gray);
+  margin-bottom: 2em;
+}
+
+/* Buttons */
+.cta-buttons {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.button-primary {
+  background: var(--pink);
+  color: var(--white);
+}
+
+.button-primary:hover {
+  background: var(--dark);
+  border-bottom: none;
+}
+
+.button-secondary {
+  background: var(--white);
+  color: var(--pink);
+  border: 2px solid var(--pink);
+}
+
+.button-secondary:hover {
+  background: var(--pink);
+  color: var(--white);
+  border-bottom: 2px solid var(--pink);
+}
+
+/* Plugin Cards */
+.plugin {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 1.5em;
+  margin-bottom: 2em;
+  transition: box-shadow 0.2s;
+}
+
+.plugin:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.plugin h3 {
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.plugin .subtitle {
+  color: var(--gray);
+  font-size: 1.1em;
+  margin-bottom: 1em;
+}
+
+.plugin .meta {
+  font-size: 0.9em;
+  color: var(--gray);
+  margin-bottom: 1em;
+}
+
+.plugin .status {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 3px;
+  font-size: 0.85em;
+  font-weight: 600;
+}
+
+.status-stable {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.status-beta {
+  background: #fff3e0;
+  color: #e65100;
+}
+
+.plugin ul {
+  margin-left: 1.5em;
+  margin-bottom: 1em;
+}
+
+.plugin li {
+  margin-bottom: 0.3em;
+}
+
+/* Principles Section */
+.principles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2em;
+  margin: 2em 0;
+}
+
+.principle h3 {
+  margin-top: 0;
+  font-size: 1.2em;
+}
+
+.principle p {
+  color: var(--gray);
+}
+
+/* Footer */
+footer {
+  margin-top: 4em;
+  padding-top: 2em;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  color: var(--gray);
+  font-size: 0.9em;
+}
+
+/* Horizontal Rule */
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 3em 0;
+}
+
+/* Lists */
+ul, ol {
+  margin-left: 1.5em;
+  margin-bottom: 1em;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  body {
+    padding: 15px;
+  }
+  
+  h1 {
+    font-size: 2em;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+  }
+  
+  .principles {
+    grid-template-columns: 1fr;
+  }
+}
