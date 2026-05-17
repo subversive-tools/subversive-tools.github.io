@@ -55,21 +55,42 @@
 
       <div class="plugin">
         <h3>▽ redmine_submenus</h3>
-        <p class="subtitle">Dropdown Navigation &amp; Portfolio Kanban</p>
-        <p>Transform your Redmine navigation with intelligent dropdown menus and powerful portfolio management. What starts as enhanced navigation evolves into a comprehensive portfolio dashboard with kanban views.</p>
+        <p class="subtitle">Dropdown Navigation &amp; Wiki Macros</p>
+        <p>Adds intelligent dropdown menus to project and wiki page titles for fast in-context navigation. Provides wiki macros to render subproject and subpage lists as tables or hierarchical lists.</p>
         <p class="meta">
-          <strong>For:</strong> Teams managing multiple subprojects who need clear portfolio oversight<br>
-          <strong>Status:</strong> <span class="status status-stable">✅ Stable (v0.5.4, Redmine 5.0–6.0)</span>
+          <strong>For:</strong> Teams navigating complex project hierarchies and documentation trees<br>
+          <strong>Status:</strong> <span class="status status-stable">✅ Stable (v0.3.0, Redmine 5.0–6.0)</span>
         </p>
         <ul>
           <li>Project dropdowns appear next to project titles</li>
           <li>Wiki dropdowns for quick access to child pages</li>
-          <li>Kanban view transforms project lists into interactive dashboards</li>
-          <li>Macro support: <code>{{subprojects(view=kanban)}}</code></li>
+          <li>Macro support: <code>{{subprojects}}</code>, <code>{{subpages}}</code> (list &amp; table views)</li>
+          <li>Macro autocomplete in the wiki editor</li>
         </ul>
         <p>
           <a href="https://github.com/subversive-tools/redmine_submenus" target="_blank" rel="noopener">GitHub</a> &nbsp;|&nbsp;
           <a href="https://github.com/subversive-tools/redmine_submenus#readme" target="_blank" rel="noopener">Documentation</a>
+        </p>
+      </div>
+
+      <div class="plugin">
+        <h3>⬛ redmine_subfolio</h3>
+        <p class="subtitle">Portfolio Kanban &amp; Project Status</p>
+        <p>Visual portfolio management for Redmine. Renders subprojects as a kanban board grouped by status, adds a colored status badge to project overview pages, and lets authorized members move projects between columns via drag and drop.</p>
+        <p class="meta">
+          <strong>For:</strong> Program managers and portfolio owners tracking multiple projects at a glance<br>
+          <strong>Status:</strong> <span class="status status-beta">⚠️ Beta (v0.1.0, Redmine 4.0+)</span>
+        </p>
+        <ul>
+          <li><code>{{portfolio}}</code> macro renders subprojects as a kanban board</li>
+          <li>Drag &amp; drop moves projects between status columns — persists immediately</li>
+          <li>Color-coded columns via status value suffixes (<code>-p</code>, <code>-i</code>, <code>-d</code>)</li>
+          <li>Status badge automatically added to project overview pages</li>
+          <li>Permission-controlled: only members with <em>Manage project status</em> can move cards</li>
+        </ul>
+        <p>
+          <a href="https://github.com/subversive-tools/redmine_subfolio" target="_blank" rel="noopener">GitHub</a> &nbsp;|&nbsp;
+          <a href="https://github.com/subversive-tools/redmine_subfolio#readme" target="_blank" rel="noopener">Documentation</a>
         </p>
       </div>
 
