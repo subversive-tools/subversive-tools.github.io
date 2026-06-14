@@ -33,12 +33,95 @@
       <h2>Plugins</h2>
 
       <div class="plugin">
+        <h3><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-3px"><polyline points="4,6 10,12 4,18"/><polyline points="12,6 18,12 12,18"/></svg> redmine_subsuggest</h3>
+        <p class="subtitle">Smart Linker &amp; Autocomplete</p>
+        <p>Quick access to Redmine objects, macros, and users via trigger characters (>>, {{, @) with contextual autocomplete and inline selection menu.</p>
+        <p class="meta">
+          <strong>For:</strong> All Redmine users needing fast navigation &amp; linking<br>
+          <strong>Version:</strong> v0.5.1 &nbsp;·&nbsp; Jun 2026 &nbsp;·&nbsp; Redmine 4.0+
+        </p>
+        <ul>
+          <li>Trigger‑based inline suggestion menu</li>
+          <li>Hierarchical drill‑down navigation</li>
+          <li>Keyboard shortcuts for efficient linking</li>
+        </ul>
+        <p>
+          <a href="https://github.com/subversive-tools/redmine_subsuggest" target="_blank" rel="noopener">GitHub</a> &nbsp;|&nbsp;
+          <a href="https://github.com/subversive-tools/redmine_subsuggest#readme" target="_blank" rel="noopener">Documentation</a>
+        </p>
+      </div>
+
+      <div class="plugin">
+        <h3><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-3px"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg> redmine_subwikifiles</h3>
+        <p class="subtitle">Bidirectional Wiki-to-Markdown Sync</p>
+        <p>Enable bidirectional synchronization between Redmine wiki pages and local Markdown files. Edit documentation in your favorite external editor; the plugin handles structure, orphan detection, and automatic Git versioning.</p>
+        <p class="meta">
+          <strong>For:</strong> Teams wanting to edit documentation outside Redmine (VS Code, Obsidian) while maintaining versioning<br>
+          <strong>Version:</strong> v0.5.2 &nbsp;·&nbsp; May 2026 &nbsp;·&nbsp; Redmine 5.0–6.0
+        </p>
+        <ul>
+          <li>Wiki pages saved as <code>.md</code> files on filesystem</li>
+          <li>Bidirectional sync (write in Redmine or filesystem)</li>
+          <li>Hierarchical structure via folders</li>
+          <li>Git integration with automatic commits</li>
+          <li>Attachment sync to <code>_attachments</code> folder</li>
+          <li>Orphan file &amp; folder detection</li>
+        </ul>
+        <p>
+          <a href="https://github.com/subversive-tools/redmine_subwikifiles" target="_blank" rel="noopener">GitHub</a> &nbsp;|&nbsp;
+          <a href="https://github.com/subversive-tools/redmine_subwikifiles#readme" target="_blank" rel="noopener">Documentation</a>
+        </p>
+      </div>
+
+      <div class="plugin">
+        <h3>⬡ redmine_subsimplify</h3>
+        <p class="subtitle">Simplified UI for Specific Roles</p>
+        <p>Provides a distraction-free Redmine interface for specific user roles or groups. Hides unnecessary menus, sidebars, and explicitly restricts access to modules beyond "Issues" and "Wiki".</p>
+        <p class="meta">
+          <strong>For:</strong> Teams with external collaborators or stakeholders who need a focused, clean view<br>
+          <strong>Version:</strong> v0.2.8 &nbsp;·&nbsp; May 2026 &nbsp;·&nbsp; Redmine 5.0–6.0
+        </p>
+        <ul>
+          <li>Role-based UI simplification</li>
+          <li>Hide sidebar, footer, top menu elements</li>
+          <li>Strict module whitelisting</li>
+          <li>Smart redirect from Overview to first allowed module</li>
+          <li>Profile privacy controls</li>
+        </ul>
+        <p>
+          <a href="https://github.com/subversive-tools/redmine_subsimplify" target="_blank" rel="noopener">GitHub</a> &nbsp;|&nbsp;
+          <a href="https://github.com/subversive-tools/redmine_subsimplify#readme" target="_blank" rel="noopener">Documentation</a>
+        </p>
+      </div>
+
+      <div class="plugin">
+        <h3>☰ redmine_subnavigation</h3>
+        <p class="subtitle">Collapsible Sidebar Navigation</p>
+        <p>A powerful, collapsible sidebar navigation tree for Redmine. Navigate smoothly through projects, wiki pages, and headings with a clean, hierarchical view.</p>
+        <p class="meta">
+          <strong>For:</strong> Documentation-heavy projects needing TOC-like navigation<br>
+          <strong>Version:</strong> v0.5.6 &nbsp;·&nbsp; May 2026 &nbsp;·&nbsp; Redmine 5.0–6.0
+        </p>
+        <ul>
+          <li>Project hierarchy with expand/collapse</li>
+          <li>Wiki tree structure with automatic TOC</li>
+          <li>Smart state persistence between page loads</li>
+          <li>Recursive expansion (Alt/Option + click)</li>
+          <li>Hide breadcrumbs option for cleaner interface</li>
+        </ul>
+        <p>
+          <a href="https://github.com/subversive-tools/redmine_subnavigation" target="_blank" rel="noopener">GitHub</a> &nbsp;|&nbsp;
+          <a href="https://github.com/subversive-tools/redmine_subnavigation#readme" target="_blank" rel="noopener">Documentation</a>
+        </p>
+      </div>
+
+      <div class="plugin">
         <h3>❖ redmine_subskills</h3>
         <p class="subtitle">Skill Management &amp; Role Matrix</p>
         <p>Transform Redmine into a comprehensive competence management tool. Track employee skills, define required roles, and find the perfect match for project requirements.</p>
         <p class="meta">
           <strong>For:</strong> HR, project managers optimizing team resource allocation<br>
-          <strong>Status:</strong> <span class="status status-stable">✅ Stable (v1.0.1, Redmine 4.0+)</span>
+          <strong>Version:</strong> v1.0.1 &nbsp;·&nbsp; May 2026 &nbsp;·&nbsp; Redmine 4.0+
         </p>
         <ul>
           <li>Central skill catalog management</li>
@@ -59,7 +142,7 @@
         <p>Adds intelligent dropdown menus to project and wiki page titles for fast in-context navigation. Provides wiki macros to render subproject and subpage lists as tables or hierarchical lists.</p>
         <p class="meta">
           <strong>For:</strong> Teams navigating complex project hierarchies and documentation trees<br>
-          <strong>Status:</strong> <span class="status status-stable">✅ Stable (v0.3.1, Redmine 5.0–6.0)</span>
+          <strong>Version:</strong> v0.3.1 &nbsp;·&nbsp; May 2026 &nbsp;·&nbsp; Redmine 5.0–6.0
         </p>
         <ul>
           <li>Project dropdowns appear next to project titles</li>
@@ -79,7 +162,7 @@
         <p>Visual portfolio management for Redmine. Renders subprojects as a kanban board grouped by status, adds a colored status badge to project overview pages, and lets authorized members move projects between columns via drag and drop.</p>
         <p class="meta">
           <strong>For:</strong> Program managers and portfolio owners tracking multiple projects at a glance<br>
-          <strong>Status:</strong> <span class="status status-stable">✅ Stable (v0.2.1, Redmine 4.0+)</span>
+          <strong>Version:</strong> v0.2.1 &nbsp;·&nbsp; May 2026 &nbsp;·&nbsp; Redmine 4.0+
         </p>
         <ul>
           <li><code>{{portfolio}}</code> macro renders subprojects as a kanban board</li>
@@ -91,89 +174,6 @@
         <p>
           <a href="https://github.com/subversive-tools/redmine_subfolio" target="_blank" rel="noopener">GitHub</a> &nbsp;|&nbsp;
           <a href="https://github.com/subversive-tools/redmine_subfolio#readme" target="_blank" rel="noopener">Documentation</a>
-        </p>
-      </div>
-
-      <div class="plugin">
-        <h3>☰ redmine_subnavigation</h3>
-        <p class="subtitle">Collapsible Sidebar Navigation</p>
-        <p>A powerful, collapsible sidebar navigation tree for Redmine. Navigate smoothly through projects, wiki pages, and headings with a clean, hierarchical view.</p>
-        <p class="meta">
-          <strong>For:</strong> Documentation-heavy projects needing TOC-like navigation<br>
-          <strong>Status:</strong> <span class="status status-stable">✅ Stable (v0.5.6, Redmine 5.0–6.0)</span>
-        </p>
-        <ul>
-          <li>Project hierarchy with expand/collapse</li>
-          <li>Wiki tree structure with automatic TOC</li>
-          <li>Smart state persistence between page loads</li>
-          <li>Recursive expansion (Alt/Option + click)</li>
-          <li>Hide breadcrumbs option for cleaner interface</li>
-        </ul>
-        <p>
-          <a href="https://github.com/subversive-tools/redmine_subnavigation" target="_blank" rel="noopener">GitHub</a> &nbsp;|&nbsp;
-          <a href="https://github.com/subversive-tools/redmine_subnavigation#readme" target="_blank" rel="noopener">Documentation</a>
-        </p>
-      </div>
-
-      <div class="plugin">
-        <h3>⬡ redmine_subsimplify</h3>
-        <p class="subtitle">Simplified UI for Specific Roles</p>
-        <p>Provides a distraction-free Redmine interface for specific user roles or groups. Hides unnecessary menus, sidebars, and explicitly restricts access to modules beyond "Issues" and "Wiki".</p>
-        <p class="meta">
-          <strong>For:</strong> Teams with external collaborators or stakeholders who need a focused, clean view<br>
-          <strong>Status:</strong> <span class="status status-stable">✅ Stable (v0.2.8, Redmine 5.0–6.0)</span>
-        </p>
-        <ul>
-          <li>Role-based UI simplification</li>
-          <li>Hide sidebar, footer, top menu elements</li>
-          <li>Strict module whitelisting</li>
-          <li>Smart redirect from Overview to first allowed module</li>
-          <li>Profile privacy controls</li>
-        </ul>
-        <p>
-          <a href="https://github.com/subversive-tools/redmine_subsimplify" target="_blank" rel="noopener">GitHub</a> &nbsp;|&nbsp;
-          <a href="https://github.com/subversive-tools/redmine_subsimplify#readme" target="_blank" rel="noopener">Documentation</a>
-        </p>
-      </div>
-
-      <div class="plugin">
-        <h3><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-3px"><polyline points="4,6 10,12 4,18"/><polyline points="12,6 18,12 12,18"/></svg> redmine_subsuggest</h3>
-        <p class="subtitle">Smart Linker &amp; Autocomplete</p>
-        <p>Quick access to Redmine objects, macros, and users via trigger characters (>>, {{, @) with contextual autocomplete and inline selection menu.</p>
-        <p class="meta">
-          <strong>For:</strong> All Redmine users needing fast navigation &amp; linking<br>
-          <strong>Status:</strong> <span class="status status-stable">✅ Stable (v0.5.1, Redmine 4.0+)</span>
-        </p>
-        <ul>
-          <li>Trigger‑based inline suggestion menu</li>
-          <li>Hierarchical drill‑down navigation</li>
-          <li>Keyboard shortcuts for efficient linking</li>
-        </ul>
-        <p>
-          <a href="https://github.com/subversive-tools/redmine_subsuggest" target="_blank" rel="noopener">GitHub</a> &nbsp;|&nbsp;
-          <a href="https://github.com/subversive-tools/redmine_subsuggest#readme" target="_blank" rel="noopener">Documentation</a>
-        </p>
-      </div>
-
-      <div class="plugin">
-        <h3><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-3px"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg> redmine_subwikifiles</h3>
-        <p class="subtitle">Bidirectional Wiki-to-Markdown Sync</p>
-        <p>Enable bidirectional synchronization between Redmine wiki pages and local Markdown files. Edit documentation in your favorite external editor; the plugin handles structure, orphan detection, and automatic Git versioning.</p>
-        <p class="meta">
-          <strong>For:</strong> Teams wanting to edit documentation outside Redmine (VS Code, Obsidian) while maintaining versioning<br>
-          <strong>Status:</strong> <span class="status status-beta">⚠️ Beta (v0.5.2, Redmine 5.0–6.0)</span>
-        </p>
-        <ul>
-          <li>Wiki pages saved as <code>.md</code> files on filesystem</li>
-          <li>Bidirectional sync (write in Redmine or filesystem)</li>
-          <li>Hierarchical structure via folders</li>
-          <li>Git integration with automatic commits</li>
-          <li>Attachment sync to <code>_attachments</code> folder</li>
-          <li>Orphan file &amp; folder detection</li>
-        </ul>
-        <p>
-          <a href="https://github.com/subversive-tools/redmine_subwikifiles" target="_blank" rel="noopener">GitHub</a> &nbsp;|&nbsp;
-          <a href="https://github.com/subversive-tools/redmine_subwikifiles#readme" target="_blank" rel="noopener">Documentation</a>
         </p>
       </div>
     </section>
